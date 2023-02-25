@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Portfolio
 description: portfolio projet
+layout: page
+permalink: /html/index.html
