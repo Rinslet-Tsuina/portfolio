@@ -5,15 +5,29 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
-<body>
+<body onload="addElement(0)">
 	<div id="menu"></div>
 	<div id="corps">
-		<div id="maitenance">
-			<h2>Construction du site</h2>
-			<p>Vous pouvez consulter le <a href="https://github.com/Rinslet-Tsuina">Github</a> en attandant</p>
+		<div class="main">
+			<table>
+				<tbody>
+					<tr>
+						<td id="prec">
+							<form><button type="button" onclick="precedent()">precedent</button></form>
+						</td>
+						<td id="actual">
+							<div id="actualE">actual</div>
+							<div id="ind" class="hidden">0</div>
+						</td>
+						<td id="next" >
+							<form><button type="button" onclick="suivant()">suivant</button></form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
-	<!--
-	<script type="text/javascript" src="../javascript/.js"></script>-->
+	
+	<script type="text/javascript" src="../js/liste.js"></script>
 </body>
 </html>
