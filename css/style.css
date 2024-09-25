@@ -10,7 +10,7 @@ img {
     width: 80%;
 }
 video{
-    width: 80%;
+    width: 50%;
 }
 #actual {
     width: 100%;
@@ -18,7 +18,48 @@ video{
     text-align: center;
 }
 html{
-    background-image: url("../media/briqueTexture.jpg");
+    background-image: url("../media/image/briqueTexture.jpg");
     background-repeat: repeat;
     background-size: 40%;
+}
+#affichage {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#affichage img {
+    width: 80%;
+    max-width: 300px;
+}
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    height: 3em;
+}
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+#menu a:hover {
+    color: #ffbb00;
+}
+
+#menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+h1 {
+    text-align: center;
+}
+p {
+    margin-left: 1.5em;
+    font-weight: bold;
 }

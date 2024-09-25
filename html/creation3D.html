@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Création 3D</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body onload="addElement(0)">
+	<div id="menu">
+		<ul>
+			<li><a href="../html/index.html">Accueil</a></li>
+			<li><a href="../html/cv.html">CV</a></li>
+			<li><a href="../html/code.html">Code</a></li>
+			<li><a href="../html/creation3D.html">Création 3D</a></li>
+			<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
+			<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
+		</ul>
+	</div>
+	
+	<div id="corps">
+		<h1>Création 3D</h1>
+		<div id="affichage"></div>
+		<div id="main" class="hidden">
+			<table>
+				<tbody>
+					<tr>
+						<td id="prec">
+							<form><button type="button" onclick="precedent()">precedent</button></form>
+						</td>
+						<td id="actual">
+							<div id="actualE">actual</div>
+							<div id="ind" class="hidden">0</div>
+						</td>
+						<td id="next" >
+							<form><button type="button" onclick="suivant()">suivant</button></form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="../js/liste.js"></script>
+	<script type="text/javascript" src="../js/affichage.js"></script>
+</body>
+</html>

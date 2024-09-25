@@ -25,9 +25,9 @@ function precedent() {
 
 function addElement(i) {
     if (i==5) {
-        let empl = document.getElementById("actualE").innerHTML = "<video controls><source src=\"../media/" + liste[i] + "\" type=\"video/mp4\"></video>";
+        let empl = document.getElementById("actualE").innerHTML = "<video controls><source src=\"../media/video/" + liste[i] + "\" type=\"video/mp4\"></video>";
     }
     else {
-        let empl = document.getElementById("actualE").innerHTML = "<img src=\"../media/" + liste[i] + "\" >";
+        let empl = document.getElementById("actualE").innerHTML = "<img src=\"../media/image/" + liste[i] + "\" >";
     }
 }
