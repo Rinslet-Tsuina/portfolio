@@ -3,7 +3,7 @@
 const gridContainer = document.getElementById('affichage');
 
 // Array of image URLs
-const imageUrls = ["infinite_chess.png", "araignee.jpg", "balle.gif", "balleBasket.png", "balleTennis.png", "creature.gif", "pokeball.png", "room.png", "table.png", "vision.png"];
+const imageUrls = ["donut1.png","pokeballs.png","vision_liyue.png","vision_mondstad.png","vision_snezhaya.png","vision_sumeru.png","infinite_chess.png", "araignee.jpg", "balle.gif", "balleBasket.png", "balleTennis.png", "creature.gif", "pokeball.png", "room.png", "table.png", "vision.png"];
 var nbI = 0;
 var currImage = 0;
 // Create the grid

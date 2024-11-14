@@ -65,4 +65,8 @@ p {
 }
 h3 {
     text-align: center;
+    font-size: large;
+}
+h2{
+    text-decoration: underline;
 }
