@@ -6,37 +6,70 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body>
+	<script type="text/javascript" src="../js/language.js"></script>
 	<div id="menu">
-		<ul>
-			<li><a href="../html/index.html">Accueil</a></li>
-			<li><a href="../html/cv.html">CV</a></li>
-			<li><a href="../html/code.html">Code</a></li>
-			<li><a href="../html/creation3D.html">Création 3D</a></li>
-			<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
-			<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
-		</ul>
+		<div class="fr">
+			<ul>
+				<li><a onclick="changeLanguage('en')">ENG</a></li>
+				<li><a href="../html/index.html">Accueil</a></li>
+				<li><a href="../html/cv.html">CV</a></li>
+				<li><a href="../html/code.html">Code</a></li>
+				<li><a href="../html/creation3D.html">Création 3D</a></li>
+				<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
+				<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
+			</ul>
+		</div>
+		<div class="eng">
+			<ul>
+				<li><a onclick="changeLanguage('fr')">FR</a></li>
+				<li><a href="../html/index.html">Home</a></li>
+				<li><a href="../html/cv.html">CV</a></li>
+				<li><a href="../html/code.html">Code</a></li>
+				<li><a href="../html/creation3D.html">3D projects</a></li>
+				<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
+				<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
+			</ul>
+		</div>
 	</div>
 	
 	<div id="corps">
 		<h1>CV</h1>
-		<h2>Formations</h2>
-		<p>2023-2024 : Master 2 Informatique Image et Intelligence Artificielle, Université de Bourgogne, Dijon <br>
+		<h2 class="fr">Formations</h2>
+		<h2 class="eng">Education</h2>
+		<p class="fr">2023-2024 : Master 2 Informatique Image processing et Intelligence Artificielle, Université de Bourgogne, Dijon <br>
 			2022-2023 : Master 1 Informatique, Université de Bourgogne, Dijon<br>
 			2019-2022 : Licence Informatique, Université de Bourgogne, Dijon<br>
 		</p>
-		<h2>Expériences professionnelles</h2>
-		<p>Avril 2024-Aôut 2024 : Stage de fin de Master, Système de réalité virtuelle pour l'aide au montage industriel,
+		<p class="eng">2023-2024 : Master 2 Computer Science Image and Artificial Intelligence, University of Burgundy, Dijon <br>
+			2022-2023 : Master 1 Computer Science, University of Burgundy, Dijon<br>
+			2019-2022 : Bachelor Computer Science, University of Burgundy, Dijon<br>
+		</p>
+		<h2 class="fr">Expériences professionnelles</h2>
+		<h2 class="eng">Work experiences</h2>
+		<p class="fr">Avril 2024-Aôut 2024 : Stage de fin de Master, Système de réalité virtuelle pour l'aide au montage industriel,
 			 Laboratoire du LISPEN de l'ENSAM, Chalon-sur-Saône</p>
-		<h2>Compétences</h2>
-		<p>Langages de programmation : C#, C, C++, Python, Java, Matlab, HTML, CSS, JavaScript, PHP, SQL<br>
+		<p class="eng">April 2024-August 2024 : End of Master internship, Virtual reality system for industrial assembly assistance,
+			 LISPEN Laboratory of ENSAM, Chalon-sur-Saône</p>
+		<h2 class="fr">Compétences</h2>
+		<h2 class="eng">Skills</h2>
+		<p class="fr">Langages de programmation : C#, C, C++, Python, Java, Matlab, HTML, CSS, JavaScript, PHP, SQL<br>
 			Logiciels : Unity, Blender, OpenGL, Gimp, Visual Studio Code, Eclipse, NetBeans<br>
 			Autres : Réalité virtuelle, Réalité augmentée, Intelligence artificielle, Traitement d'image, Traitement du signal, Modélisation 3D, Animation 3D, Développement web, Base de données
 		</p>
-		<h2>Langues</h2>
-		<p>Français : langue maternelle<br>
+		<p class="eng">Programming languages : C#, C, C++, Python, Java, Matlab, HTML, CSS, JavaScript, PHP, SQL<br>
+			Software : Unity, Blender, OpenGL, Gimp, Visual Studio Code, Eclipse, NetBeans<br>
+			Others : Virtual reality, Augmented reality, Artificial intelligence, Image processing, Signal processing, 3D modeling, 3D animation, Web development, Database
+		</p>
+		<h2 class="fr">Langues</h2>
+		<h2 class="eng">Languages</h2>
+		<p class="fr">Français : langue maternelle<br>
 			Anglais : niveau B2<br>
+			Japonais : JLPT N5<br>
+		</p>
+		<p class="eng">French : native language<br>
+			English : B2 level<br>
+			Japanese : JLPT N5<br>
 		</p>
 	</div>
-	
 </body>
 </html>

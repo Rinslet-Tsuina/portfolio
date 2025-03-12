@@ -6,33 +6,51 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body onload="addElement(0)">
+	<script type="text/javascript" src="../js/language.js"></script>
 	<div id="menu">
-		<ul>
-			<li><a href="../html/index.html">Accueil</a></li>
-			<li><a href="../html/cv.html">CV</a></li>
-			<li><a href="../html/code.html">Code</a></li>
-			<li><a href="../html/creation3D.html">Création 3D</a></li>
-			<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
-			<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
-		</ul>
+		<div class="fr">
+			<ul>
+				<li><a onclick="changeLanguage('en')">ENG</a></li>
+				<li><a href="../html/index.html">Accueil</a></li>
+				<li><a href="../html/cv.html">CV</a></li>
+				<li><a href="../html/code.html">Code</a></li>
+				<li><a href="../html/creation3D.html">Création 3D</a></li>
+				<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
+				<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
+			</ul>
+		</div>
+		<div class="eng">
+			<ul>
+				<li><a onclick="changeLanguage('fr')">FR</a></li>
+				<li><a href="../html/index.html">Home</a></li>
+				<li><a href="../html/cv.html">CV</a></li>
+				<li><a href="../html/code.html">Code</a></li>
+				<li><a href="../html/creation3D.html">3D projects</a></li>
+				<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
+				<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
+			</ul>
+		</div>
 	</div>
 	
 	<div id="corps">
-		<h1>Création 3D</h1>
+		<h1 class="fr">Création 3D</h1>
+		<h1 class="eng">3D projects</h1>
 		<div id="affichage"></div>
 		<div id="main" class="hidden">
 			<table>
 				<tbody>
 					<tr>
-						<td id="prec">
-							<form><button type="button" onclick="precedent()">precedent</button></form>
+						<td id="prec" >
+							<form class="fr"><button type="button" onclick="prev()">precedent</button></form>
+							<form class="eng"><button type="button" onclick="prev()">prev</button></form>
 						</td>
 						<td id="actual">
 							<div id="actualE">actual</div>
 							<div id="ind" class="hidden">0</div>
 						</td>
 						<td id="next" >
-							<form><button type="button" onclick="suivant()">suivant</button></form>
+							<form class="fr"><button type="button" onclick="next()">suivant</button></form>
+							<form class="eng"><button type="button" onclick="next()">next</button></form>
 						</td>
 					</tr>
 				</tbody>
@@ -40,7 +58,8 @@
 		</div>
 	</div>
 	
-	<script type="text/javascript" src="../js/liste.js"></script>
-	<script type="text/javascript" src="../js/affichage.js"></script>
+	<script type="text/javascript" src="../js/list.js"></script>
+	<script type="text/javascript" src="../js/images.js"></script>
+	
 </body>
 </html>

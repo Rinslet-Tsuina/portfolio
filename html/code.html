@@ -6,36 +6,61 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body >
+	<script type="text/javascript" src="../js/language.js"></script>
 	<div id="menu">
-		<ul>
-			<li><a href="../html/index.html">Accueil</a></li>
-			<li><a href="../html/cv.html">CV</a></li>
-			<li><a href="../html/code.html">Code</a></li>
-			<li><a href="../html/creation3D.html">Création 3D</a></li>
-			<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
-			<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
-		</ul>
+		<div class="fr">
+			<ul>
+				<li><a onclick="changeLanguage('en')">ENG</a></li>
+				<li><a href="../html/index.html">Accueil</a></li>
+				<li><a href="../html/cv.html">CV</a></li>
+				<li><a href="../html/code.html">Code</a></li>
+				<li><a href="../html/creation3D.html">Création 3D</a></li>
+				<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
+				<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
+			</ul>
+		</div>
+		<div class="eng">
+			<ul>
+				<li><a onclick="changeLanguage('fr')">FR</a></li>
+				<li><a href="../html/index.html">Home</a></li>
+				<li><a href="../html/cv.html">CV</a></li>
+				<li><a href="../html/code.html">Code</a></li>
+				<li><a href="../html/creation3D.html">3D projects</a></li>
+				<li><a href="https://fr.linkedin.com/in/orlane-tisserand-80911122a">LinkedIn</a></li>
+				<li><a href="https://github.com/Rinslet-Tsuina">GitHub</a></li>
+			</ul>
+		</div>
 	</div>
 	
 	<div id="corps">
 		<h1>Code</h1>
-		<h2>Projets scolaires :</h2>
+		<h2 class="fr">Projets scolaires :</h2>
+		<h2 class="eng">School projects :</h2>
 		<div>
 			<div>
-				<h3>Génération de labyrinthe et course-poursuite de robot</h3>
-				<p>Ce projet a été réalisé seul et s'est déroulé entre Février 2021 et Mai 2021. Il a été codé en C puis en C++.
+				<h3 class="fr">Génération de labyrinthe et course-poursuite de robot</h3>
+				<p class="fr">Ce projet a été réalisé seul et s'est déroulé entre Février 2021 et Mai 2021. Il a été codé en C puis en C++.
 					 Le code du projet est disponible <a href="https://github.com/Rinslet-Tsuina/labyrinthe">ici</a>.</p>
+				<h3 class="eng">Maze generation and robot chase</h3>
+				<p class="eng">This project was done alone and took place between February 2021 and May 2021. It was coded in C then in C++.
+					The code of the project is available <a href="https://github.com/Rinslet-Tsuina/labyrinthe">here</a>.</p>
 				<video controls>
 					<source src="../media/video/labyrinthe.mp4" type="video/mp4">
 					Votre navigateur ne supporte pas les vidéos HTML5.
 				</video>
 			</div>
 			<div>
-				<h3>Jeu de la vie en 3D</h3>
-				<p>Ce projet a été réalisé seul et s'est déroulé entre Novembre 2022 et Décembre 2022. Il a été codé en C++.
+				<h3 class="fr">Jeu de la vie en 3D</h3>
+				<p class="fr">Ce projet a été réalisé seul et s'est déroulé entre Novembre 2022 et Décembre 2022. Il a été codé en C++.
 					Le code du projet est disponible <a href="https://github.com/Rinslet-Tsuina/GameOfLife3d">ici</a>.
 					Il s'agit d'une version en 3D du jeu de la vie de Conway. On peut choisir la taille de la grille et le nombre de cellules vivantes au départ.
 					Le jeu se déroule dans un terminal.
+				</p>
+				<h3 class="eng">3D game of life</h3>
+				<p class="eng">This project was done alone and took place between November 2022 and December 2022. It was coded in C++.
+					The code of the project is available <a href="https://github.com/Rinslet-Tsuina/GameOfLife3d">here</a>.
+					This is a 3D version of Conway's game of life. You can choose the size of the grid and the number of living cells at the beginning.
+					The game takes place in a terminal.
 				</p>
 				<video controls>
 					<source src="../media/video/gameOfLife3d.mp4" type="video/mp4">
@@ -43,22 +68,35 @@
 				</video>
 			</div>
 			<div>
-				<h3>BrodUI : logiciel de création de patron de broderie</h3>
-				<p>Ce projet a été réalisé en groupe de 6 personnes et s'est déroulé entre Février 2023 et Mai 2023. Il a été codé en C#.
+				<h3 class="fr">BrodUI : logiciel de création de patron de broderie</h3>
+				<p class="fr">Ce projet a été réalisé en groupe de 6 personnes et s'est déroulé entre Février 2023 et Mai 2023. Il a été codé en C#.
 					Le code du projet est disponible <a href="https://github.com/samlach2222/BrodUI">ici</a>.
 					Le logiciel permet de créer des patrons de broderie en point de croix. Il est possible de choisir le nombre de fils et la taille de la toile.
 					On peut aussi importer une image pour la transformer en patron de broderie ainsi que exporter le patron en PDF.
 					Les couleurs de l'image sont choisis en fonction des couleurs de fils DMC disponibles.
 					On utilise l'algorithme de clustering K-means pour réduire les zones de couleurs.
 				</p>
+				<h3 class="eng">BrodUI : cross-stitch pattern app</h3>
+				<p class="eng"> This project was done in a group of 6 people and took place between February 2023 and May 2023. It was coded in C#.
+					The code of the project is available <a href="https://github.com/samlach2222/BrodUI">here</a>.
+					The software allows you to create cross-stitch patterns. It is possible to choose the number of threads and the size of the canvas.
+					You can also import an image to transform it into a cross-stitch pattern and export the pattern to PDF.
+					The colors of the image are chosen according to the available DMC thread colors.
+					We use the K-means clustering algorithm to reduce color zones.
+				</p>
 				<img src="../media/image/brodUI1.png" alt="BrodUI"/>
 				<img src="../media/image/brodUI2.png" alt="BrodUI"/>
 			</div>
 			<div>
-				<h3>Projet tuteuré : Lettres en lumières</h3>
-				<p>
+				<h3 class="fr">Projet tuteuré : Lettres en lumières</h3>
+				<p class="fr">
 					Il s'agit du projet principal de master 2. Il a été réalisé avec les archives départementales de la Côte d'Or.
 					Il a été codé en Python et consistait à réaliser un correcteur orthographique pour les textes du 18ème siècle. 
+				</p>
+				<h3 class="eng">Major project of Master 2 : Light on letters</h3>
+				<p class="eng">
+					This is the main project of master 2. It was done with the departmental archives of Côte d'Or.
+					It was coded in Python and consisted in making a spelling corrector for 18th century texts.
 				</p>
 				<video controls>
 					<source src="../media/video/lettre_en_lumieres.mp4" type="video/mp4">
@@ -67,13 +105,21 @@
 				</video>
 			</div>
 		</div>
-		<h2>Projets personnels :</h2>
+		<h2 class="fr">Projets personnels :</h2>
+		<h2 class="eng">Personal projects :</h2>
 		<div>
 			<div>
-				<h3>Infinite-chess : jeu d'échec en mode roguelike</h3>
-				<p>Ce projet a été réalisé en binôme et a été codé début Avril 2024 et n'a pas été terminé. 
+				<h3 class="fr">Infinite-chess : jeu d'échec en mode roguelike</h3>
+				<h3 class="eng">Infinite-chess : roguelike chess game</h3>
+				<p class="fr">Ce projet a été réalisé en binôme et a été codé début Avril 2024 et n'a pas été terminé. 
 					Il s'agit d'un jeu style roguelike où le joueur comme les ennemis sont des pièces d'échecs. Le joueur peut devenir d'autre pièces.
-					 Le but est de finir les niveaux sans mourir. Il est en vue isométique du dessus.  </p>
+					 Le but est de finir les niveaux sans mourir. Il est en vue isométique du dessus.  
+				</p>
+				<p class="eng">
+					This project was done in pair and was coded in early April 2024 and was not finished. 
+					It is a roguelike style game where the player and the enemies are chess pieces. The player can become other pieces.
+					The goal is to finish the levels without dying. It is in isometric top view.
+				</p>
 				<img src="../media/image/infinite_chess.png" alt="infinite-chess"/>
 			</div>
 			
